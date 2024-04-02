@@ -11,6 +11,7 @@ void exercise_1(string s1) {
         cout<< i << endl;
     }
 }
+  cout<<line.size()<<endl;
 }
 
 void exercise_2(string s1) {
