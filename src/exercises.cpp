@@ -9,7 +9,7 @@ void exercise_1(string s1) {
   for(int i= 0; i < line.size(); ++i){
     if(line[i] ==' '){
         cout<< i << endl;
-    } 
+    }  
 }
 }
  
