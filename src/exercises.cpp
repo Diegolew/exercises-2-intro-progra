@@ -12,7 +12,7 @@ void exercise_1(string s1) {
     } 
 }
 }
-
+ 
 void exercise_2(string s1) {
   // TODO: YOUR CODE HERE
 }
