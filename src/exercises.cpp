@@ -51,7 +51,23 @@ for (int i = 0; i < s1.size() && visitas < 10; i++) {
 }
 
 void exercise_4(int n) {
-  // TODO: YOUR CODE HERE
+    // TODO: YOUR CODE HERE
+if (n < 0) {
+  cout << "El numero es negativo. Intentelo de nuevo" << endl;
+  return;
+}
+
+if (n > 12) {
+  cout << "El numero es muy grande. Intentelo de nuevo" << endl;
+  return;
+}
+
+int factorial = 1;
+
+for (int i = 1; i <= n; i++) {
+  factorial *= i;
+  }
+  cout << factorial << endl;
 }
 
 void exercise_5(int n, int k) {
