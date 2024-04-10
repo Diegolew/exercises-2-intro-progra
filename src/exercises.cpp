@@ -7,7 +7,7 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
-  
+
   int indice = 0;
   for(int i = 0; i < s1.size(); i++) {
     if(s1[i] == ' '){
@@ -19,6 +19,16 @@ void exercise_1(string s1) {
 
 void exercise_2(string s1) {
   // TODO: YOUR CODE HERE
+  string palabra;
+    for (int i = 0; i < s1.size(); i++) {
+      if (s1[i] != ' ') {
+        palabra += s1[i];
+    } else {
+        cout << "[" << palabra << "]" << endl;
+        palabra = "";
+    }
+  }
+    cout << "[" << palabra << "]" << endl;
 }
 
 void exercise_3(string s1) {
