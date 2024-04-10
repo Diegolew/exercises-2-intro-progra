@@ -1,17 +1,22 @@
 
 #include <cmath>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
-  for(int i= 0; i < line.size(); ++i){
-    if(line[i] ==' '){
-        cout<< i << endl;
+  string linea;
+  getline(cin,linea);
+
+  int indice = 0;
+  for(int i = 0; i< linea.size(); i++){
+    if(linea[i] == ' '){
+      cout<< i << endl;
     }
-}
-  cout<<line.size()<<endl;
+  }
+  cout<< linea.size() << endl;
 }
 
 void exercise_2(string s1) {
