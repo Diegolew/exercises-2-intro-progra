@@ -7,16 +7,15 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
-  string linea;
-  getline(cin,linea);
+  getline(cin, s1);
 
   int indice = 0;
-  for(int i = 0; i< linea.size(); i++){
-    if(linea[i] == ' '){
+  for(int i = 0; i < s1.size(); i++) {
+    if(s1[i] == ' '){
       cout<< i << endl;
     }
   }
-  cout<< linea.size() << endl;
+  cout<< s1.size() << endl;
 }
 
 void exercise_2(string s1) {
