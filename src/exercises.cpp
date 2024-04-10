@@ -37,6 +37,17 @@ for (int i = 0; i < s1.size(); i++) {
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
+int visitas = 0;
+
+for (int i = 0; i < s1.size() && visitas < 10; i++) {
+  if (s1[i] == '1') {
+    cout << "Om-nom-nom :P" << endl;
+    visitas++;
+} else if (s1[i] == '0') {
+    cout << "No cake :(" << endl;
+    break;
+    }
+  }
 }
 
 void exercise_4(int n) {
