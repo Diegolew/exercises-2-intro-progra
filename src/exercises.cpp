@@ -72,6 +72,20 @@ for (int i = 1; i <= n; i++) {
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
+int day = 1;
+for (int i = 1; i < n; ++i) {
+  cout << "    ";
+  }
+
+for (int i = 1; i <= k; ++i) {
+  if (day < 10)
+    cout << " ";
+    cout << day << "  ";
+
+  if ((day + n - 1) % 7 == 0 || i == k)
+    cout << endl;
+    day++;
+  }
 }
 
 int exercise_6(int n) {
