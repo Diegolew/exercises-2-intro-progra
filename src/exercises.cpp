@@ -79,8 +79,8 @@ for (int i = 1; i < n; ++i) {
 
 for (int i = 1; i <= k; ++i) {
   if (day < 10)
-    cout << " ";
-    cout << day << "  ";
+    cout << "  ";
+    cout << day << "   ";
 
   if ((day + n - 1) % 7 == 0 || i == k)
     cout << endl;
