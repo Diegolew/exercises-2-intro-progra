@@ -75,7 +75,7 @@ void exercise_5(int n, int k) {
 int day = 1;
 
 for (int i = 1; i < n; ++i) {
-  cout << "    ";
+  cout << "   ";
 }
 
 for (int i = 1; i <= k; ++i) {
@@ -84,7 +84,7 @@ for (int i = 1; i <= k; ++i) {
     cout << day;
 
 if (day < 10) {
-  cout << "   ";
+  cout << "  ";
 } else {
   cout << "  ";
 }
