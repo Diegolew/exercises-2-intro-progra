@@ -126,30 +126,25 @@ if (i % 2 == 0) {
 }
 
 void exercise_8(string s) {
-    // Eliminar espacios de la cadena
-string strSinEspacios;
-for (int i = 0; s[i]; ++i) {
- char c = s[i];
- if (c != ' ') {
-   if (c >= 'A' && c <= 'Z') {
-     c += ('a' - 'A');
-   }
-   strSinEspacios += c;
-  }
-}
+    string strSinEspacios;
+    for (int i = 0; s[i]; ++i) {
+        char c = s[i];
+        if (c != ' ') {
+            strSinEspacios += c;
+        }
+    }
 
-    // Verificar si la cadena sin espacios es un palíndromo
 int inicio = 0;
 int fin = strSinEspacios.length() - 1;
 while (inicio < fin) {
-  if (strSinEspacios[inicio] != strSinEspacios[fin]) {
-    cout << "NO" << endl;
-    return;
-    }
-    inicio++;
-    fin--;
+ if (strSinEspacios[inicio] != strSinEspacios[fin]) {
+  cout << "NO" << endl;
+  return;
   }
-  cout << "YES" << endl;
+  inicio++;
+  fin--;
+ }
+ cout << "YES" << endl;
 }
 
 void exercise_9(string s) {
