@@ -126,18 +126,18 @@ if (i % 2 == 0) {
 }
 
 void exercise_8(string s) {
-    string strSinEspacios;
+    string no_space;
     for (int i = 0; s[i]; ++i) {
         char c = s[i];
         if (c != ' ') {
-            strSinEspacios += c;
+            no_space += c;
         }
     }
 
 int inicio = 0;
-int fin = strSinEspacios.length() - 1;
+int fin = no_space.length() - 1;
 while (inicio < fin) {
- if (strSinEspacios[inicio] != strSinEspacios[fin]) {
+ if (no_space[inicio] != no_space[fin]) {
   cout << "NO" << endl;
   return;
   }
