@@ -97,6 +97,15 @@ if ((day + n - 1) % 7 == 0 || i == k)
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
+
+int suma = 0;
+while (n > 0) {
+  int digito = n % 10;
+  suma += digito;
+  n /= 10;
+}
+  return suma;
+
   return 0;
 }
 
