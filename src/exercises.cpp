@@ -111,6 +111,18 @@ while (n > 0) {
 
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
+   double suma = 0.0;
+
+for (int i = 1; i <= n; ++i) {
+double termino = 1.0 / i;
+
+if (i % 2 == 0) {
+  suma -= termino;
+} else { 
+  suma += termino;
+    }
+  }
+    cout << suma << endl;
 }
 
 void exercise_8(string s) {
