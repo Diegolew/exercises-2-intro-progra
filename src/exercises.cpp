@@ -126,13 +126,13 @@ if (i % 2 == 0) {
 }
 
 void exercise_8(string s) {
-    string no_space;
-    for (int i = 0; s[i]; ++i) {
-        char c = s[i];
-        if (c != ' ') {
-            no_space += c;
-        }
+string no_space;
+ for (int i = 0; s[i]; ++i) {
+  char c = s[i];
+   if (c != ' ') {
+    no_space += c;
     }
+  }
 
 int inicio = 0;
 int fin = no_space.length() - 1;
