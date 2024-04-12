@@ -127,6 +127,28 @@ if (i % 2 == 0) {
 
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
+  string no_space;
+
+  for(int 1=0; s[i] != '\o'; ++i){
+    char c = s[1];
+    if(c != ' '){
+      if(c >= 'A' && c <= 'Z'){
+        c +=('a' - 'z')
+      }
+      no_space += c;
+    } 
+  }
+
+  int inicio = 0;
+  int fin = no_space.length() - 1;
+  while(inicio < fin){
+    if(no_space[inicio] != no_space[fin]){
+      cout<<"No"<<endl;
+    }
+    inicio++;
+    fin--;
+  }
+  cout<<"Yes"<<endl;
 }
 
 void exercise_9(string s) {
