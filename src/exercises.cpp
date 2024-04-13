@@ -148,8 +148,9 @@ while (inicio < fin) {
 }
 
 void exercise_9(string s) {
+  int first_f_index = -1;
   int count_f = 0;
-
+  
 for (int i = 0; i < s.length(); ++i) {
   if (s[i] == 'f') {
    if (count_f == 0) {
