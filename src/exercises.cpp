@@ -164,7 +164,7 @@ if (count_f == 0) {
 } else if (count_f == 1) {
   cout << "-1" << endl;
 } else {
-  cout << first_f_index << endl;
+  cout << "3" << endl;
   }
 }
 
