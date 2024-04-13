@@ -175,7 +175,13 @@ return a;
 }
 
 void exercise_11() {
-  // TODO: YOUR CODE HERE
+double U = 1.0;
+cout << "U0 = " << U << endl;
+
+for (int n = 1; n <= 10; ++n) {
+  U = (1.0 / (n + 1)) * U;
+  cout << "U" << n << " = " << U << endl;
+  }
 }
 
 void exercise_12() {
