@@ -72,31 +72,22 @@ for (int i = 1; i <= n; i++) {
 
 void exercise_5(int n, int k) {
 int current_day = 1;
-for (int week_day = 1; week_day <= 7; ++week_day) {
-  if (week_day >= n) {
-    cout << current_day++;
-  if (current_day <= k) {
-                cout << (current_day < 10 ? "  " : " ");
-  } else {
-    cout << endl;
-    return;
-     }
-    } else {
-   cout << "    ";
-  }
-}
 
-    while (current_day <= k) {
-        for (int week_day = 1; week_day <= 7; ++week_day) {
-            cout << current_day++;
-            if (current_day <= k) {
-                cout << (current_day < 10 ? "  " : " ");
-            } else {
-                cout << endl;
-                return;
-            }
-        }
+for (int week_day = 1; week_day <= 7; ++week_day) {
+  if (week_day < n) {
+    cout << "    ";
+  } else {
+    cout << current_day++;
+    cout << (current_day <= k ? (current_day < 10 ? "  " : " ") : "\n");
     }
+  }
+
+while (current_day <= k) {
+  for (int week_day = 1; week_day <= 7 && current_day <= k; ++week_day) {
+    cout << current_day++;
+    cout << (current_day <= k ? (current_day < 10 ? "  " : " ") : "\n");
+    }
+  }
 }
 
 int exercise_6(int n) {
