@@ -169,15 +169,12 @@ if (count_f == 0) {
 }
 
 int exercise_10(int a, int b) {
-int min_value = min(a, b); // Obtener el valor mínimo de a y b
-int gcd = 1;
-
-for (int i = 1; i <= min_value; ++i) {
-  if (a % i == 0 && b % i == 0) {
-   gcd = i; // Almacenar el valor de i solo si es divisor común
-    }
+while (b != 0) {
+  int temp = b;
+  b = a % b;
+  a = temp;
   }
-return gcd;
+return a;
 }
 
 void exercise_11() {
