@@ -76,16 +76,19 @@ for (int week_day = 1; week_day <= 7; ++week_day) {
   if (week_day < n) {
     cout << "     ";
   } else {
-    cout << current_day++;
-    cout << (current_day <= k ? (current_day < 10 ? "   " : "  ") : "");
+      cout << current_day++;
+      if (current_day <= k) {
+        cout << (current_day < 10 ? "   " : "  ");
+    }
   }
 }
 cout << endl;
-
 while (current_day <= k) {
   for (int week_day = 1; week_day <= 7; ++week_day) {
     cout << current_day++;
-    cout << (current_day <= k ? (current_day < 10 ? "   " : "  ") : "");
+    if (current_day <= k) {
+      cout << (current_day < 10 ? "   " : "  ");
+      }
     }
     cout << endl;
   }
