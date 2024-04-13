@@ -112,7 +112,7 @@ while (n > 0) {
 }
 
 void exercise_7(int n) {
-  // TODO: YOUR CODE HERE
+   // TODO: YOUR CODE HERE
    double suma = 0.0;
 
 for (int i = 1; i <= n; ++i) {
