@@ -187,6 +187,21 @@ void exercise_11() {
 
 void exercise_12() {
   // TODO: YOUR CODE HERE
+  void exercise_12() {
+    double U = 1.0;
+    double V = 1.0;
+
+    cout << "U1 = " << U << " V1 = " << V << endl;
+
+    for (int n = 1; n <= 10; ++n) {
+        U /= (n + 1); 
+        V += U;      
+        cout << "U" << n + 1 << " = " << U << " V" << n + 1 << " = " << V << endl;
+    }
+
+    cout << "Valor aproximado de V10: " << V << endl;
+    cout << "Error respecto a exp(1): " << abs(V - exp(1)) << endl;
+}
 }
 
 long exercise_13(int n, int k) {
