@@ -175,16 +175,14 @@ return a;
 }
 
 void exercise_11() {
-    using namespace std;
-    double U = 1.0;
+double U = 1.0;
+cout << fixed << setprecision(6);
+cout << "U0 = " << U << endl;
 
-    cout << fixed << setprecision(6);
-    cout << "U0 = " << U << endl;
-
-    for (int n = 1; n <= 10; ++n) {
-        U /= n;
-        cout << "U" << n << " = " << U << endl;
-    }
+for (int n = 1; n <= 10; ++n) {
+  U /= n;
+  cout << "U" << n << " = " << U << endl;
+  }
 }
 
 
