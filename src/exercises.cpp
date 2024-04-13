@@ -177,12 +177,16 @@ return a;
 void exercise_11() {
 double U = 1.0;
 cout << fixed << setprecision(6);
-cout << "U0 = " << U << endl;
+    cout << "U0 = " << U << " V0 = " << U << endl;
 
-for (int n = 1; n <= 10; ++n) {
-  U /= n;
-  cout << "U" << n << " = " << U << endl;
-  }
+    for (int n = 1; n <= 10; ++n) {
+        U /= n;
+        double V = 0;
+        for (int i = 0; i <= n; ++i) {
+            V += U;
+        }
+        cout << "U" << n << " = " << U << " V" << n << " = " << V << endl;
+    }
 }
 
 
