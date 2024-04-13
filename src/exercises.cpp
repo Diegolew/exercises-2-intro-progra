@@ -175,31 +175,21 @@ return a;
 }
 
 void exercise_11() {
+    using namespace std;
     double U = 1.0;
 
-    cout << "U0 = " << fixed << U << endl; 
+    cout << fixed << setprecision(6);
+    cout << "U0 = " << U << endl;
 
     for (int n = 1; n <= 10; ++n) {
-        U /= (n + 1); 
+        U /= n;
         cout << "U" << n << " = " << U << endl;
     }
 }
 
+
 void exercise_12() {
-    double U = 1.0;
-    double V = 1.0;
-
-    cout << "U1 = " << U << " V1 = " << V << endl;
-
-    for (int n = 1; n <= 9; ++n) { 
-        U /= (n + 1);
-        V += U;
-        cout << "U" << n + 1 << " = " << U << " V" << n + 1 << " = " << V << endl;
-    }
-
-    cout << "U10 = " << U << " V10 = " << V + U << endl;
-    cout << "Valor aproximado de V10: " << V + U << endl;
-    cout << "Error respecto a exp(1): " << abs(V + U - exp(1)) << endl;
+  // TODO: YOUR CODE HERE
 }
 
 long exercise_13(int n, int k) {
