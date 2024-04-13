@@ -149,6 +149,27 @@ while (inicio < fin) {
 
 void exercise_9(string s) {
   // TODO: YOUR CODE HERE
+void exercise_9(string s) {
+  int first_f_index = -1;
+  int count_f = 0;
+
+for (int i = 0; i < s.length(); ++i) {
+        if (s[i] == 'f') {
+            if (count_f == 0) {
+                first_f_index = i;
+            }
+            count_f++;
+        }
+    }
+
+    if (count_f == 0) {
+        cout << "-2" << endl;
+    } else if (count_f == 1) {
+        cout << "-1" << endl;
+    } else {
+        cout << first_f_index << endl;
+    }
+}
 }
 
 int exercise_10(int a, int b) {
