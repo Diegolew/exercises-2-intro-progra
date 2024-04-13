@@ -150,7 +150,7 @@ while (inicio < fin) {
 void exercise_9(string s) {
   int first_f_index = -1;
   int count_f = 0;
-  
+
 for (int i = 0; i < s.length(); ++i) {
   if (s[i] == 'f') {
    if (count_f == 0) {
@@ -170,7 +170,15 @@ if (count_f == 0) {
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
-  return 0;
+int min = (a < b) ? a : b;
+int gcd = 1;
+
+for (int i = 1; i <= min; ++i) {
+  if (a % i == 0 && b % i == 0) {
+    gcd = i;
+    }
+  }
+  return gcd;
 }
 
 void exercise_11() {
