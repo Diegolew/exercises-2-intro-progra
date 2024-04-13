@@ -78,21 +78,14 @@ void exercise_5(int n, int k) {
             cout << "    ";
         } else {
             cout << current_day++;
-            if (current_day <= k) {
-                cout << (current_day < 10 ? "  " : " ");
-            }
+            cout << (current_day <= k ? (current_day < 10 ? "  " : " ") : "\n");
         }
     }
 
     while (current_day <= k) {
-        if (current_day % 7 == 0 || current_day == k) {
-            cout << endl;
-        } else {
-            cout << " ";
-        }
-        cout << current_day++;
-        if (current_day <= k) {
-            cout << (current_day < 10 ? "  " : " ");
+        for (int week_day = 1; week_day <= 7 && current_day <= k; ++week_day) {
+            cout << current_day++;
+            cout << (current_day <= k ? (current_day < 10 ? "  " : " ") : "\n");
         }
     }
 }
