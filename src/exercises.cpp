@@ -93,7 +93,6 @@ while (current_day <= k) {
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
-
 int suma = 0;
 while (n > 0) {
   int digito = n % 10;
