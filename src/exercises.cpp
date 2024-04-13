@@ -175,14 +175,13 @@ return a;
 }
 
 void exercise_11() {
-    double U = 1.0;
+double U = 1.0;
+cout << "U0 = " << U << endl;
 
-    cout << "U0 = " << U << endl;
-
-    for (int n = 1; n <= 10; ++n) {
-        U = (1.0 / (n + 1)) * U;
-        cout << "U" << n << " = " << fixed << setprecision(7) << U << endl;
-    }
+for (int n = 1; n <= 10; ++n) {
+  U /= (n + 1); 
+  cout << "U" << n << " = " << U << endl;
+  }
 }
 
 void exercise_12() {
