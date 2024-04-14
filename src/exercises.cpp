@@ -218,7 +218,17 @@ if (original == reversed) {
 }
 
 void exercise_15(int decimal) {
-  // TODO: YOUR CODE HERE
+int binary[32]; 
+int i = 0;
+while (decimal > 0) {
+  binary[i] = decimal % 2;
+  decimal /= 2;
+  i++;
+}
+
+for (int j = i - 1; j >= 0; j--) {
+    cout << binary[j];
+  }
 }
 
 void exercise_16(int divident, int divider) {
