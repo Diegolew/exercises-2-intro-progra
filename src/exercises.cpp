@@ -218,20 +218,17 @@ if (original == reversed) {
 }
 
 void exercise_15(int decimal) {
+string result;
+    
 if (decimal == 0) {
-  cout << "0";
-  return;
-}
-int binary[32];
-int i = 0;
-while (decimal > 0) {
-  binary[i] = decimal % 2;
-  decimal /= 2;
-  i++;
-}
-for (int j = i - 1; j >= 0; j--) {
-  cout << binary[j];
+  result = "0";
+} else {
+  while (decimal > 0) {
+    result = to_string(decimal % 2) + result;
+    decimal /= 2;
+    }
   }
+  cout << result << endl;
 }
 
 void exercise_16(int divident, int divider) {
