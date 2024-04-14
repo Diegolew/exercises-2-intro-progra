@@ -65,7 +65,7 @@ if (n > 12) {
 int factorial = 1;
 
 for (int i = 1; i <= n; i++) {
-  factorial *= i;
+   factorial *= i;
   }
   cout << factorial << endl;
 }
@@ -215,7 +215,7 @@ if (original == reversed) {
   result = "No es palindrome";
 }
 
-    return result;
+  return result;
 }
 
 void exercise_15(int decimal) {
