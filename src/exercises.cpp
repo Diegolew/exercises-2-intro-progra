@@ -266,5 +266,29 @@ while (count < n) {
 }
 
 void exercise_18_19(int debut, int fin) {
-  // TODO: YOUR CODE HERE
+if (fin >= debut && debut > 0 && fin > 0) {
+  for (int i = debut; i <= fin; ++i) {
+    int steps = 0;
+    int current = i;
+    while (current != 0) {
+      if (current % 3 == 0) {
+        current += 4;
+        ++steps;
+      } else if (current % 4 == 0) {
+        current /= 2;
+        ++steps;
+      } else {
+        --current;
+        ++steps;
+      }
+    }
+    cout << i << "->" << steps << endl;
+  }
+  } else {
+      if (debut <= 0 || fin <= 0) {
+        cout << "El numero debe ser positivo y mayor a cero." << endl;
+      } else {
+        cout << "El numero de fin no debe ser menor que el inicial." << endl;
+    }
+  }
 }
