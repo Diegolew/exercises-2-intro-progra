@@ -192,7 +192,7 @@ long exercise_13(int n, int k) {
     long suma = 0;
 
     for (int i = 1; i <= n; ++i) {
-        long termino = i / pow(i, k); // Error aquí, debería ser pow(i, k)
+        long termino = i / pow(i, k);
         suma += termino;
     }
 
