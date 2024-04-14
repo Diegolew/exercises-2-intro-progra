@@ -174,7 +174,16 @@ return a;
 }
 
 void exercise_11() {
+double UI = 1;
+cout << "U0 = 1" << endl;
+    
+for(int i = 1; i <= 10; ++i) {
+  double result = UI / (i + 1);
+  cout << "U" << i << " = " << result << endl;
+  UI = result;
+  }
 }
+
 
 void exercise_12() {
 double En = 1;
