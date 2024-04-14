@@ -179,11 +179,11 @@ void exercise_11() {
 
 void exercise_12() {
 double En = 1;
-double Un = e;
+double Un = En;
 for(int i=1; 10>=i; ++i){
-  int VI = Un;
+  int Vn = Un;
   double result = En/(i +1);
-  cout << "U" << i << " = " << En << " " << "V" << i << " = " << VI << endl;
+  cout << "U" << i << " = " << En << " " << "V" << i << " = " << Vn << endl;
   En = result;
     }
 }
