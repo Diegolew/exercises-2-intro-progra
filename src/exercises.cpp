@@ -189,8 +189,14 @@ for(int i=1; 10>=i; ++i){
 }
 
 long exercise_13(int n, int k) {
-  // TODO: YOUR CODE HERE 
-  return 0;
+    long suma = 0;
+
+    for (int i = 1; i <= n; ++i) {
+        long termino = i / pow(i, k); // Error aquí, debería ser pow(i, k)
+        suma += termino;
+    }
+
+    return suma;
 }
 
 string exercise_14(int n) {
