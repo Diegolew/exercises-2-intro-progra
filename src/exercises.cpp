@@ -189,15 +189,15 @@ for(int i=1; 10>=i; ++i){
 }
 
 long exercise_13(int n, int k) {
-    long suma = 0;
+long suma = 0;
 
-    for (int i = 1; i <= n; ++i) {
-        long termino = i / pow(i, k);
-        suma += termino;
-    }
-
-    return suma;
+for (int i = 1; i <= n; ++i) {
+  long termino = pow(i, k);
+  suma += termino;
+  }
+  return suma;
 }
+
 
 string exercise_14(int n) {
   // TODO: YOUR CODE HERE
