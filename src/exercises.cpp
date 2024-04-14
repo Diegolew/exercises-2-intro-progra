@@ -198,10 +198,24 @@ for (int i = 1; i <= n; ++i) {
   return suma;
 }
 
-
 string exercise_14(int n) {
-  // TODO: YOUR CODE HERE
-  return "";
+string result;
+int original = n;
+int reversed = 0;
+
+while (n != 0) {
+  int remainder = n % 10;
+  reversed = reversed * 10 + remainder;
+  n /= 10;
+}
+
+if (original == reversed) {
+  result = "Es palindrome";
+} else {
+  result = "No es palindrome";
+}
+
+    return result;
 }
 
 void exercise_15(int decimal) {
