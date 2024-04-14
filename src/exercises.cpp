@@ -191,7 +191,6 @@ for (int n = 1; n <= 10; ++n) {
 
 long exercise_13(int n, int k) {
   // TODO: YOUR CODE HERE 
-
   return 0;
 }
 
