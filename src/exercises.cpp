@@ -178,15 +178,14 @@ void exercise_11() {
 }
 
 void exercise_12() {
-double e = exp(1);
-double Un = 1;
-double Vn = 1;
-
-for (int n = 1; n <= 10; ++n) {
-  Un = Un / n;
-  Vn = Vn + Un;
-  cout << "U" << n << " = " << Un << " V" << n << " = " << Vn << endl;
-  }
+double En = 1;
+double Un = e;
+for(int i=1; 10>=i; ++i){
+  int VI = Un;
+  double result = En/(i +1);
+  cout << "U" << i << " = " << En << " " << "V" << i << " = " << VI << endl;
+  En = result;
+    }
 }
 
 long exercise_13(int n, int k) {
