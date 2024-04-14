@@ -218,9 +218,9 @@ if (original == reversed) {
 }
 
 void exercise_15(int decimal) {
-int binary[32]
-
+int binary[32];
 int i = 0;
+
 while (decimal > 0) {
   binary[i] = decimal % 2;
   decimal /= 2; 
