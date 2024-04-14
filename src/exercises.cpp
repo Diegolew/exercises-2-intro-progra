@@ -190,7 +190,7 @@ void exercise_12() {
         Vn = Vn + Un;
         cout << "U" << n << " = " << Un << " V" << n << " = " << Vn << endl;
     }
-}
+  }
 }
 
 long exercise_13(int n, int k) {
