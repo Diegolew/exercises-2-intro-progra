@@ -237,7 +237,7 @@ int residuo = 0;
 while (dividendo >= divisor) {
   dividendo -= divisor;
   cociente++;
-  }
+  } 
 residuo = dividendo;
 cout << cociente << " " << residuo << endl;
 }
