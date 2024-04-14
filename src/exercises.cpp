@@ -231,9 +231,17 @@ if (decimal == 0) {
   cout << result << endl;
 }
 
-void exercise_16(int divident, int divider) {
-  // TODO: YOUR CODE HERE
+void exercise_16(int dividendo, int divisor) {
+int cociente = 0;
+int residuo = 0;
+while (dividendo >= divisor) {
+  dividendo -= divisor;
+  cociente++;
+  }
+residuo = dividendo;
+cout << cociente << " " << residuo << endl;
 }
+
 
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
