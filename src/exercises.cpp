@@ -244,7 +244,25 @@ cout << cociente << " " << residuo << endl;
 
 
 void exercise_17(int n) {
-  // TODO: YOUR CODE HERE
+int count = 0;
+int number = 2;
+while (count < n) {
+  bool isPrime = true;
+
+  for (int i = 2; i <= number / 2; ++i) {
+    if (number % i == 0) {
+      isPrime = false;
+      break;
+    }
+  }
+
+  if (isPrime) {
+    cout << number << " ";
+    ++count;
+    }
+
+  ++number;
+  }
 }
 
 void exercise_18_19(int debut, int fin) {
