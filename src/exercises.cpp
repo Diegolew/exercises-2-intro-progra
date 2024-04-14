@@ -180,6 +180,17 @@ void exercise_11() {
 
 void exercise_12() {
   // TODO: YOUR CODE HERE
+  void exercise_12() {
+    double e = 2.71828;
+    double Un = 1;
+    double Vn = 1;
+
+    for (int n = 1; n <= 10; ++n) {
+        Un = Un / n;
+        Vn = Vn + Un;
+        cout << "U" << n << " = " << Un << " V" << n << " = " << Vn << endl;
+    }
+}
 }
 
 long exercise_13(int n, int k) {
