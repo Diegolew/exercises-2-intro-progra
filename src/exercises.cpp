@@ -203,26 +203,100 @@ for (int i = 1; i <= n; ++i) {
   long termino = pow(i, k);
   suma += termino;
   }
-  return 0;
+  return suma;
 }
 
 string exercise_14(int n) {
+string result;
+int original = n;
+int reversed = 0;
 
+while (n != 0) {
+  int remainder = n % 10;
+  reversed = reversed * 10 + remainder;
+  n /= 10;
+}
+
+if (original == reversed) {
+  result = "Es palindrome";
+} else {
+  result = "No es palindrome";
+  }
+  return result;
 }
 
 void exercise_15(int decimal) {
-
+string result;
+    
+if (decimal == 0) {
+  result = "0";
+} else {
+  while (decimal > 0) {
+    result = to_string(decimal % 2) + result;
+    decimal /= 2;
+    }
+  }
+  cout << result << endl;
 }
 
 void exercise_16(int dividendo, int divisor) {
-
+int cociente = 0;
+int residuo = 0;
+while (dividendo >= divisor) {
+  dividendo -= divisor;
+  cociente++;
+  } 
+residuo = dividendo;
+cout << cociente << " " << residuo << endl;
 }
 
 
 void exercise_17(int n) {
+int count = 0;
+int number = 2;
+while (count < n) {
+  bool isPrime = true;
 
+  for (int i = 2; i <= number / 2; ++i) {
+    if (number % i == 0) {
+      isPrime = false;
+      break;
+    }
+  }
+
+  if (isPrime) {
+    cout << number << " ";
+    ++count;
+    }
+
+  ++number;
+  }
 }
 
 void exercise_18_19(int debut, int fin) {
-
+if (fin >= debut && debut > 0 && fin > 0) {
+  for (int i = debut; i <= fin; ++i) {
+    int steps = 0;
+    int current = i;
+    while (current != 0) {
+      if (current % 3 == 0) {
+        current += 4;
+        ++steps;
+      } else if (current % 4 == 0) {
+        current /= 2;
+        ++steps;
+      } else {
+        --current;
+        ++steps;
+      }
+    }
+    cout << i << "->" << steps << endl;
+  }
+  } else {
+      if (debut <= 0 || fin <= 0) {
+        cout << "El numero debe ser positivo y mayor a cero." << endl;
+      } else {
+        cout << "El numero de fin no debe ser menor que el inicial." << endl;
+    }
+  }
 }
