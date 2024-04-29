@@ -70,27 +70,59 @@ for (int i = 1; i <= n; i++) {
 }
 
 void exercise_5(int n, int k) {
-int current_day = 1;
-for (int week_day = 1; week_day <= 7; ++week_day) {
-  if (week_day < n) {
-    cout << "     ";
-  } else {
-      cout << current_day++;
-      if (current_day <= k) {
-        cout << (current_day < 10 ? "   " : "  ");
+string espacio;
+  switch(n){
+      case 1:
+          espacio =  " "s;
+          break;
+      case 2:
+          espacio =  "  "s;
+          break;
+      case 3:
+           espacio =  "     "s;
+          break;
+       case 4:
+           espacio =  "        "s;
+          break;
+       case 5:
+           espacio =  "           "s;
+           break;
+      case 6:
+           espacio =  "              "s;
+          break;
+      case 7:
+         espacio =  "                 "s;
+           break;
     }
-  }
-}
-cout << endl;
-while (current_day <= k) {
-  for (int week_day = 1; week_day <= 7; ++week_day) {
-    cout << current_day++;
-    if (current_day <= k) {
-      cout << (current_day < 10 ? "   " : "  ");
-      }
+tring _i;
+for(int i = 1; i<=k; ++i){
+   int s = 20;
+   int r = 0;
+   while(r<=14){
+     if(espacio.size()== s+(s*r) + r){
+        espacio= espacio + '\n';
+        break;
+     }
+      ++r;
+        }
+  if(n==1 && espacio.size()==1){
+      espacio = espacio + to_string(i);
+  }else if(to_string(i).size()==1 && espacio[espacio.size()-1]!='\n'){
+      _i = "  " + to_string(i);
+      espacio = espacio + _i;
+  }else if(to_string(i).size()==1 && espacio[espacio.size()-1]=='\n'){
+      _i = " " + to_string(i);
+      espacio = espacio + _i;
+        
+  }else if(to_string(i).size()==2 && espacio[espacio.size()-1]!='\n'){
+      _i = " " + to_string(i);
+      espacio = espacio + _i;
+  }else if(to_string(i).size()==2 && espacio[espacio.size()-1]=='\n'){
+      espacio = espacio + to_string(i);
     }
-    cout << endl;
+        
   }
+    cout << espacio << " " << endl;
 }
 
 int exercise_6(int n) {
@@ -174,13 +206,12 @@ return a;
 }
 
 void exercise_11() {
-double UI = 1;
-cout << "U0 = 1" << endl;
-    
-for(int i = 1; i <= 10; ++i) {
-  double result = UI / (i + 1);
-  cout << "U" << i << " = " << result << endl;
-  UI = result;
+  double UI = 1;
+  cout << "U0 = 1"<< endl;
+  for(int i=1; 10>=i; ++i){
+      double result = UI/(i +1);
+      cout << "U" << i << " = " << UI << endl;
+      UI = result;
   }
 }
 
