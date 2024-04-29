@@ -70,28 +70,28 @@ for (int i = 1; i <= n; i++) {
 }
 
 void exercise_5(int n, int k) {
-string espacio;
+string espacio1;
   switch(n){
       case 1:
-          espacio =  " "s;
+          espacio1 =  " "s;
           break;
       case 2:
-          espacio =  "  "s;
+          espacio1 =  "  "s;
           break;
       case 3:
-           espacio =  "     "s;
+           espacio1 =  "     "s;
           break;
        case 4:
-           espacio =  "        "s;
+           espacio1 =  "        "s;
           break;
        case 5:
-           espacio =  "           "s;
+           espacio1 =  "           "s;
            break;
       case 6:
-           espacio =  "              "s;
+           espacio1 =  "              "s;
           break;
       case 7:
-         espacio =  "                 "s;
+         espacio1 =  "                 "s;
            break;
     }
 tring _i;
@@ -99,30 +99,30 @@ for(int i = 1; i<=k; ++i){
    int s = 20;
    int r = 0;
    while(r<=14){
-     if(espacio.size()== s+(s*r) + r){
-        espacio= espacio + '\n';
+     if(espacio1.size()== s+(s*r) + r){
+        espacio1= espacio1 + '\n';
         break;
      }
       ++r;
         }
-  if(n==1 && espacio.size()==1){
-      espacio = espacio + to_string(i);
-  }else if(to_string(i).size()==1 && espacio[espacio.size()-1]!='\n'){
+  if(n==1 && espacio1.size()==1){
+      espacio1 = espacio1 + to_string(i);
+  }else if(to_string(i).size()==1 && espacio1[espacio1.size()-1]!='\n'){
       _i = "  " + to_string(i);
-      espacio = espacio + _i;
-  }else if(to_string(i).size()==1 && espacio[espacio.size()-1]=='\n'){
+      espacio1 = espacio1 + _i;
+  }else if(to_string(i).size()==1 && espacio1[espacio1.size()-1]=='\n'){
       _i = " " + to_string(i);
-      espacio = espacio + _i;
+      espacio1 = espacio1 + _i;
         
-  }else if(to_string(i).size()==2 && espacio[espacio.size()-1]!='\n'){
+  }else if(to_string(i).size()==2 && espacio1[espacio1.size()-1]!='\n'){
       _i = " " + to_string(i);
-      espacio = espacio + _i;
-  }else if(to_string(i).size()==2 && espacio[espacio.size()-1]=='\n'){
-      espacio = espacio + to_string(i);
+      espacio1 = espacio1 + _i;
+  }else if(to_string(i).size()==2 && espacio1[espacio1.size()-1]=='\n'){
+      espacio1 = espacio1 + to_string(i);
     }
         
   }
-    cout << espacio << " " << endl;
+    cout << espacio1 << " " << endl;
 }
 
 int exercise_6(int n) {
